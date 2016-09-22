@@ -1,22 +1,22 @@
 angular.module("app").directive("menu", function(){
 	function linkFunc(scope, elem, attrs){
 		var bees = new Audio();
-		bees.src = '../notTheBees.mp3';
+		bees.src = 'mp3/notTheBees.mp3';
 		bees.controls = true;
 		bees.loop = true;
 		bees.volume = 0.03;
 		var whiteNoise = new Audio();
-		whiteNoise.src = "../white.mp3";
+		whiteNoise.src = "mp3/white.mp3";
 		whiteNoise.controls = true;
 		whiteNoise.loop = true;
 		whiteNoise.volume = 0.01;
 		var pinkNoise = new Audio();
-		pinkNoise.src = "../pink.mp3";
+		pinkNoise.src = "mp3/pink.mp3";
 		pinkNoise.loop = true;
 		pinkNoise.controls = true;
 		pinkNoise.volume = 0.01;
 		var rainAudio = new Audio();
-		rainAudio.src = "rain-03.mp3";
+		rainAudio.src = "mp3/rain-03.mp3";
 		rainAudio.loop = true;
 		rainAudio.controls = true;
 		rainAudio.volume = 0.01;
@@ -93,7 +93,7 @@ angular.module("app").directive("menu", function(){
 
 	}
 	return{
-		templateUrl: "../../html/views/menu/menu.html",
+		templateUrl: "html/views/menu/menu.html",
 		link: linkFunc
 	};
 });

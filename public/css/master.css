@@ -278,19 +278,28 @@ html {
         font-size: 6vh; }
     html header #logo {
       float: left;
-      width: 8vh;
-      height: 8vh;
+      display: flex;
       margin-top: 1vh;
       margin-left: 2%;
-      background: #970000; }
+      justify-content: center;
+      align-items: flex-end; }
       html header #logo h1 {
+        background: #970000;
+        padding: 0;
+        margin: 0 auto;
+        width: 8vh;
         height: 8vh;
         text-align: center;
         color: white;
         text-shadow: -2px -3px #4A4A4A;
         font-family: arial-black;
-        font-size: 8vh;
-        line-height: 5vh; }
+        font-size: 8vh; }
+      html header #logo p {
+        padding: .5em;
+        padding-left: 0.1em;
+        background-color: #970000;
+        color: white;
+        font-family: helvetica; }
   html #view {
     height: 55.5vh; }
     html #view .title {
@@ -315,15 +324,17 @@ html {
     html #view .sleep .box {
       background-color: #453b9c; }
     html #view #visualBox.focus {
-      box-shadow: 0 1vh 1vh #0bc94c; }
+      box-shadow: 0 1vh #0bc94c; }
     html #view #visualBox.relax {
-      box-shadow: 0 1vh 1vh #d56d00; }
+      box-shadow: 0 1vh #d56d00; }
     html #view #visualBox.sleep {
-      box-shadow: 0 1vh 1vh #453b9c; }
+      box-shadow: 0 1vh #453b9c; }
     html #view #visualBox {
       display: flex;
-      width: 100vw;
       height: 37vh;
+      margin: 0 auto;
+      width: 100vw;
+      max-width: 800px;
       align-items: flex-end; }
       html #view #visualBox .box {
         width: 5%;

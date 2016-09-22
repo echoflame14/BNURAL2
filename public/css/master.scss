@@ -36,16 +36,19 @@ html{
 		}
 		#logo{
 			float:left;
-
-			width:8vh;
-			height:8vh;
+			display:flex;
 			margin-top:1vh;
 			margin-left:2%;
-
-			background:$crimson;
+			justify-content:center;
+			align-items:flex-end;
 			h1{
-				height:8vh;
+				background:$crimson;
 
+				padding:0;
+				margin:0 auto;
+
+				width:8vh;
+				height:8vh;
 				text-align:center;
 
 				color:white;
@@ -53,12 +56,19 @@ html{
 
 				font-family:arial-black;
 				font-size:8vh;
-				line-height:5vh;
+			}
+			p{
+				padding:.5em;
+				padding-left:0.1em;
+				background-color:$crimson;
+				color:white;
+				font-family:helvetica;
 			}
 		}
 	}
 	#view{
 		height:55.5vh;
+
 		.title{
 			height:20vh;
 			padding-top:3vh;
@@ -96,22 +106,24 @@ html{
 				background-color:$sleep;
 			}
 		}
+
 		#visualBox.focus{
-			box-shadow:0 1vh 1vh $focus;
+
+			box-shadow:0 1vh $focus;
 		}
 		#visualBox.relax{
-			box-shadow:0 1vh 1vh $relax;
+			box-shadow:0 1vh $relax;
 		}
 		#visualBox.sleep{
-			box-shadow:0 1vh 1vh $sleep;
+			box-shadow:0 1vh  $sleep;
 		}
 
 		#visualBox{
 			display:flex;
-
-			width:100vw;
 			height:37vh;
-
+			margin:0 auto;
+			width:100vw;
+			max-width:800px;
 			align-items:flex-end;
 			.box{
 				width:5%;
